@@ -176,7 +176,11 @@ img {
 /** ------------- section-one ------------- **/
 
 .section-one {
-    max-width: 1440px;
+    /* display: block;
+    max-width: 100%;
+    height: auto; */
+    max-width: 432px;
+    /* max-width: 1440px; */
     background: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
@@ -196,7 +200,9 @@ img {
 .one-tex {
     color: #fff;
     text-align: center;
-    font-size: 56px;
+    /* font-size: 56px; */
+    width: 216px;
+    font-size: 36px;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
@@ -229,23 +235,25 @@ img {
 /** ------------- section-two ------------- **/
 
 .section-two {
-    padding: 120px 0;
+    /* padding: 120px 0; */
+    padding: 96px 0;
 }
 
 .section-two-tex {
 }
 
 .two-item {
-    display: flex;
+    /* display: flex; */
     gap: 24px;
 }
 
 .two-list {
-    width: calc((100% - 72px) / 4);
+    /* width: calc((100% - 72px) / 4); */
 }
 
 .two-icons {
-    display: flex;
+    /* display: flex; */
+    display: none;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -257,8 +265,10 @@ img {
 }
 
 .two-link {
+    text-align: center;
     color: #2e2f42;
-    font-size: 20px;
+    font-size: 36px;
+    /* font-size: 20px; */
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -270,6 +280,7 @@ img {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 72px;
 }
 
 /** ----------------------------------------- **/
@@ -368,8 +379,8 @@ img {
 /** ------------- section-four ------------- **/
 
 .section-four {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding: 120px 0; */
+    padding: 96px 0;
 }
 
 .section-four-tex {
@@ -391,7 +402,7 @@ img {
 }
 
 .four-list {
-    width: calc((100% - 48px) / 3);
+    /* width: calc((100% - 48px) / 3); */
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -833,17 +844,40 @@ img {
     .container {
         max-width: 768px;
     }
+    /** ------------- section-one ------------- **/
+    .section-one {
+        max-width: 436px;
+    }
+    /** --------------------------------------- **/
+    /** ------------- section-two ------------- **/
+    .two-item {
+        flex-wrap: wrap;
+        display: flex;
+        gap: 24px;
+    }
+    .two-list {
+        width: calc((100% - 24px) / 2);
+    }
+    /** --------------------------------------- **/
     /** ------------- section-three ------------- **/
 
     .section-three {
-        padding-top: 96px;
+        padding: 96px 0;
     }
     .three-item {
         flex-wrap: wrap;
         gap: 24px;
         display: flex;
+        padding-left: 108px;
+        padding-right: 108px;
     }
     .three-list {
+        width: calc((100% - 24px) / 2);
+    }
+    /** ----------------------------------------- **/
+    /** -------------- section-four ------------- **/
+
+    .four-list {
         width: calc((100% - 24px) / 2);
     }
     /** ----------------------------------------- **/
@@ -855,9 +889,30 @@ img {
         max-width: 1158px;
         padding: 0 15px;
     }
+    /** ------------- section-one ------------- **/
+    .section-one {
+    }
+    /** --------------------------------------- **/
+    /** ------------- section-two ------------- **/
+    .section-two {
+        padding: 120px 0;
+    }
+    .two-item {
+        display: flex;
+    }
+    .two-list {
+        width: calc((100% - 72px) / 4);
+    }
+    .two-icons {
+        display: flex;
+    }
+    .two-link {
+        font-size: 20px;
+    }
+    /** ----------------------------------------- **/
     /** ------------- section-three ------------- **/
     .section-three {
-        padding-top: 120px;
+        padding: 120px 0;
     }
     .three-item {
         gap: 24px;
@@ -865,6 +920,14 @@ img {
     }
     .three-list {
         width: calc((100% - 72px) / 4);
+    }
+    /** ----------------------------------------- **/
+    /** -------------- section-four ------------- **/
+    .section-four {
+        padding: 120px 0;
+    }
+    .four-list {
+        width: calc((100% - 48px) / 3);
     }
     /** ----------------------------------------- **/
 }
