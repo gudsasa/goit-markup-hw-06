@@ -36,11 +36,13 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
 .container {
-    width: 100%;
+    /* max-width: 1158px; */
     max-width: 320px;
+    /* padding: 0 15px; */
     padding: 0 16px;
     margin: 0 auto;
 }
@@ -234,13 +236,12 @@ img {
 }
 
 .two-item {
-    /* display: flex; */
+    display: flex;
     gap: 24px;
 }
 
 .two-list {
-    /* width: calc((100% - 72px) / 4); */
-    width: 100%;
+    width: calc((100% - 72px) / 4);
 }
 
 .two-icons {
@@ -257,10 +258,8 @@ img {
 
 .two-link {
     color: #2e2f42;
-    /* font-size: 20px; */
-    font-size: 36px;
-    /* font-weight: 500; */
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
@@ -278,7 +277,8 @@ img {
 /** ------------- section-three ------------- **/
 
 .section-three {
-    padding: 120px 0;
+    /* padding: 120px 0; */
+    padding-top: 96px;
     background-color: #f4f4fd;
 }
 
@@ -304,10 +304,6 @@ img {
     border-radius: 0px 0px 4px 4px;
     background-color: #fff;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
-
-.three-list-images {
-    margin: 0 auto;
 }
 
 .content-conteiner {
@@ -372,8 +368,7 @@ img {
 /** ------------- section-four ------------- **/
 
 .section-four {
-    /* padding-top: 120px; */
-    padding-top: 96px;
+    padding-top: 120px;
     padding-bottom: 120px;
 }
 
@@ -385,8 +380,7 @@ img {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    /* margin-bottom: 72px; */
-    margin-bottom: 71px;
+    margin-bottom: 72px;
 }
 
 .four-item {
@@ -397,8 +391,7 @@ img {
 }
 
 .four-list {
-    /* width: calc((100% - 48px) / 3); */
-    width: 100%;
+    width: calc((100% - 48px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -416,7 +409,6 @@ img {
 }
 
 .four-img {
-    margin: 0 auto;
 }
 
 .four-stylis {
@@ -841,18 +833,38 @@ img {
     .container {
         max-width: 768px;
     }
+    /** ------------- section-three ------------- **/
 
     .section-three {
         padding-top: 96px;
     }
-
     .three-item {
         flex-wrap: wrap;
         gap: 24px;
         display: flex;
     }
-
     .three-list {
         width: calc((100% - 24px) / 2);
     }
+    /** ----------------------------------------- **/
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 100%;
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+    /** ------------- section-three ------------- **/
+    .section-three {
+        padding-top: 120px;
+    }
+    .three-item {
+        gap: 24px;
+        display: flex;
+    }
+    .three-list {
+        width: calc((100% - 72px) / 4);
+    }
+    /** ----------------------------------------- **/
 }
